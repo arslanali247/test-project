@@ -1,3 +1,3 @@
 FROM php:7.0-apache
 COPY . /var/www/html
-EXPOSE 8080
+EXPOSE 8001
