@@ -5,15 +5,15 @@ services:
     ports:
       - 8001:80
     volumes:
-      - ./:/public_html
-      - ./:/etc/nginx/conf.d
+      - .:/public_html
+      - .:/etc/nginx/conf.d
     networks:
       - nginx_php
   
   php:
     image: php:fpm-alpine
     volumes:
-    - ./:/public_html
+    - .:/public_html
     expose:
       - 9000
     networks:
